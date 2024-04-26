@@ -22,7 +22,7 @@ load_dotenv()
 os.environ["OPENAI_API_BASE"] = 'http://localhost:11434/v1'
 os.environ["OPENAI_MODEL_NAME"] = 'mistral'  # Adjust based on your available model
 # os.environ["OPENAI_API_KEY"] = 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMBsidDxE9m/+4xhrz+2lNCwELUAK/D/K813aPJCOXuL'  # May not be needed for local Ollama, set appropriately
-os.environ["OPENAI_API_KEY"] = 'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIMBsidDxE9m/+4xhrz+2lNCwELUAK/D/K813aPJCOXuL'
+os.environ["OPENAI_API_KEY"] = ''
 
 model = ChatOpenAI(model_name=os.environ["OPENAI_MODEL_NAME"], temperature=0.7)
 
